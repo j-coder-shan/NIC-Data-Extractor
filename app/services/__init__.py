@@ -11,6 +11,15 @@ from app.services.gemini_service import (
     GeminiStructuredOutputError,
     GeminiTimeoutError,
 )
+from app.services.image_preprocessor import (
+    CorruptedImageError,
+    ImagePreprocessingError,
+    ImagePreprocessingSettings,
+    ImagePreprocessor,
+    ImageTooLargeError,
+    ProcessedImage,
+    UnsupportedImageError,
+)
 
 __all__ = [
     "GeminiAuthenticationError",
@@ -22,4 +31,11 @@ __all__ = [
     "GeminiSettings",
     "GeminiStructuredOutputError",
     "GeminiTimeoutError",
+    "CorruptedImageError",
+    "ImagePreprocessingError",
+    "ImagePreprocessingSettings",
+    "ImagePreprocessor",
+    "ImageTooLargeError",
+    "ProcessedImage",
+    "UnsupportedImageError",
 ]
